@@ -4,6 +4,7 @@
 
 ![qAlgo v.0.01](http://i.imgur.com/FYK7VHC.png)
 
+[quick demo video](https://www.youtube.com/watch?v=Lei3fakDcZ8)
 ## Purpose
 
 "qAlgo" is a simple demonstrative and educative GUI application that allows to see how basic sorting algorithms work in action written using Qt library.
