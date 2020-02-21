@@ -10,10 +10,6 @@
 "qAlgo" is a simple demonstrative and educative GUI application that allows to see how basic sorting algorithms work in action written using Qt library.
 It can find usage in schools or universities on first courses, or can be used just for fun.
 
-## Status
-
-<i>Under development</i>
-
 ## Features
 
 - Adjustable size of array
