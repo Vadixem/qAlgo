@@ -3,6 +3,10 @@
 #include <QPropertyAnimation>
 #include <QParallelAnimationGroup>
 #include <QPointer>
+#include <QLineF>
+#include <QRectF>
+
+#include <math.h>
 
 class SwapAnimation : public QPropertyAnimation
 {
