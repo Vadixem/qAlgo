@@ -23,6 +23,9 @@ It can find usage in schools or universities on first courses, or can be used ju
 
 In order to start sorting animation sequence automatically('Start' button) or manually('Step forward' button) first one should select sort type.
 
+## Build
+Qt5.12 should be used(There are deprecation and incomatibility errors when using Qt6.7)
+
 ## Contribution
 
 Pull requests are welcome, along with any feedback or ideas.
