@@ -1,4 +1,4 @@
-# qAlgo v.0.01
+# qAlgo v.1.0
 
 >  <i>"An algorithm must be seen to be believed..."</i> Donald Knuth
 
