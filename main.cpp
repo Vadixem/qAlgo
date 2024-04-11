@@ -13,7 +13,7 @@ int main(int argc, char **argv)
     QGridLayout *pgridLayout = new QGridLayout;
     pgridLayout->addWidget(psortWidget);
     wgt.setLayout(pgridLayout);
-    wgt.setWindowTitle("qAlgo v.0.01");
+    wgt.setWindowTitle("qAlgo v.1.0");
     wgt.setMinimumSize(500, 400);
     wgt.show();
 
