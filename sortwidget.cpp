@@ -173,12 +173,12 @@ SortWidget::SortWidget(QWidget *par, int numberOfSortElements)
     : QWidget(par), numberOfSortElements(numberOfSortElements), minSortItemQty(5), maxSortItemQty(50)
 {
     installEventFilter(new SortWidgetEventHandler(this));
-    qsrand(QTime(0,0,0).secsTo(QTime::currentTime()));
+    srand(QTime(0,0,0).secsTo(QTime::currentTime()));
     QList<QGraphicsRectWidget*> wgtList;
     QGraphicsRectWidget* pwgt;
     for (int i = 0; i < numberOfSortElements; ++i)
     {
-        pwgt = new QGraphicsRectWidget(Q_NULLPTR, qrand() % 100);
+        pwgt = new QGraphicsRectWidget(Q_NULLPTR, rand() % 100);
         pwgt->setZValue(i);
         wgtList.push_back(pwgt);
     }
@@ -429,7 +429,7 @@ bool SortWidget::addSortItem()
 {
     if (numberOfSortElements > minSortItemQty || numberOfSortElements < maxSortItemQty)
     {
-        QGraphicsRectWidget *wgt = new QGraphicsRectWidget(Q_NULLPTR, qrand() % 100);
+        QGraphicsRectWidget *wgt = new QGraphicsRectWidget(Q_NULLPTR, rand() % 100);
         ++numberOfSortElements;
 
         // Add to the end of elements chain
@@ -502,7 +502,7 @@ void SortWidget::slotFillSortItemsWithRand(int max)
 
     for (auto item : pwindow->items())
     {
-        static_cast<QGraphicsRectWidget*>(item)->m_number = qrand() % max;
+        static_cast<QGraphicsRectWidget*>(item)->m_number = rand() % max;
         item->update();
     }
 }
